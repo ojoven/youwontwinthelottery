@@ -56,54 +56,61 @@ function loadGrid(gridSize) {
 
 function adaptOptionsScreen(gridSize) {
 
+    var $optionWidth, $optionHeight;
+
     switch ($orientation) {
         case 'landscape':
 
             switch (gridSize) {
 
                 case 2:
-                    $(".option").width($width/2);
-                    $(".option").height($height);
+                    $optionWidth = $width/2;
+                    $optionHeight = $height;
                     break;
 
                 case 4:
-                    $(".option").width($width/2);
-                    $(".option").height($height/2);
+                    $optionWidth = $width/2;
+                    $optionHeight = $height/2;
                     break;
 
                 case 8:
-                    $(".option").width($width/4);
-                    $(".option").height($height/2);
+                    $optionWidth = $width/4;
+                    $optionHeight = $height/2;
                     break;
 
                 case 16:
-                    $(".option").width($width/4);
-                    $(".option").height($height/4);
+                    $optionWidth = $width/4;
+                    $optionHeight = $height/4;
                     break;
 
                 case 32:
-                    $(".option").width($width/8);
-                    $(".option").height($height/4);
+                    $optionWidth = $width/8;
+                    $optionHeight = $height/4;
                     break;
 
                 case 64:
-                    $(".option").width($width/8);
-                    $(".option").height($height/8);
+                    $optionWidth = $width/8;
+                    $optionHeight = $height/8;
                     break;
 
                 case 128:
-                    $(".option").width($width/16);
-                    $(".option").height($height/8);
+                    $optionWidth = $width/16;
+                    $optionHeight = $height/8;
                     break;
 
                 case 256:
-                    $(".option").width($width/16);
-                    $(".option").height($height/16);
+                    $optionWidth = $width/16;
+                    $optionHeight = $height/16;
                     break;
 
             }
 
     }
+
+    $('.option').width($optionWidth);
+    $('.option').height($optionHeight);
+
+    console.log($width, $optionWidth);
 
 }
 
