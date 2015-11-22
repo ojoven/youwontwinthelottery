@@ -22,7 +22,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .main-font, body { font-family: 'Raleway', sans-serif; }
 
-body { box-sizing: border-box; }
+body { box-sizing: border-box; overflow: hidden; }
+
+#main-header { height: 40px; text-align: center; background: #212021; color: #fff; font-weight: bold; }
+#main-header .title { padding: 12px; }
 
 #grid .option { -webkit-transition: background 0.3s ease-in-out; /* Chrome 1-25, Safari 3.2+ */ -moz-transition: background 0.3s ease-in-out; /* Firefox 4-15 */ -o-transition: background 0.3s ease-in-out; /* Opera 10.50–12.00 */ transition: background 0.3s ease-in-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */ border: 1px solid #ccc; background: #fff; display: block; width: 20px; height: 20px; float: left; overflow: hidden; box-sizing: border-box; margin: -1px; padding: 0; }
 #grid .option:hover, #grid .option:focus { -webkit-transition: background 0.3s ease-in-out; /* Chrome 1-25, Safari 3.2+ */ -moz-transition: background 0.3s ease-in-out; /* Firefox 4-15 */ -o-transition: background 0.3s ease-in-out; /* Opera 10.50–12.00 */ transition: background 0.3s ease-in-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */ background: #ccc; }

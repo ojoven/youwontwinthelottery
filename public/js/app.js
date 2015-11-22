@@ -118,7 +118,7 @@ function adaptOptionsScreen(gridSize) {
 function populateWindowSize() {
 
     $width = $(window).outerWidth();
-    $height = $(window).outerHeight();
+    $height = $(window).outerHeight() - $("#main-header").outerHeight();
     $orientation = $width>$height ? "landscape" : "portrait";
 
 }

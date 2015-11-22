@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>You won't win the lottery</title>
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,100' rel='stylesheet' type='text/css'>
@@ -11,8 +10,8 @@
 
     </head>
     <body>
-        <header>
-            <div id="title">You won't win the lottery</div>
+        <header id="main-header">
+            <div class="title">You won't win the lottery</div>
         </header>
         <main>
 
